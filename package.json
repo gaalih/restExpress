@@ -1,0 +1,31 @@
+{
+  "name": "restexpress",
+  "version": "1.0.0",
+  "description": "rest api untuk assesment test menggunakan node dan library express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaalih/restExpress.git"
+  },
+  "keywords": [
+    "rest",
+    "api"
+  ],
+  "author": "gaalih",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaalih/restExpress/issues"
+  },
+  "homepage": "https://github.com/gaalih/restExpress#readme",
+  "dependencies": {
+    "express": "^4.18.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  }
+}
