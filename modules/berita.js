@@ -15,8 +15,8 @@ router.get('/', (req, res) => {
 
 // specific data
 router.get('/:id_berita', (req, res) => {
-  let berita_dicari = data_berita.find(
-    (x) => x.id === parseInt(req.params.id_berita),
+  const berita_dicari = data_berita.find(
+    (x) => x.id_berita === parseInt(req.params.id_berita),
   )
 
   // jika data tidak ditemukan

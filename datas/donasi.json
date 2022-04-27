@@ -1,7 +1,7 @@
 [
   {
     "id_donatur": 1,
-    "visibility": "umum",
+    "visibility": "terlihat",
     "id_donasi_program": 1,
     "kode_donasi": "91919102",
     "total_donasi": 50397,
@@ -11,7 +11,7 @@
   },
   {
     "id_donatur": 2,
-    "visibility": "ramadhan",
+    "visibility": "sembunyikan",
     "id_donasi_program": 1,
     "kode_donasi": "91919102",
     "total_donasi": 50397,
@@ -21,7 +21,7 @@
   },
   {
     "id_donatur": 3,
-    "visibility": "pembangunan",
+    "visibility": "terlihat",
     "id_donasi_program": 30,
     "kode_donasi": "91919102",
     "total_donasi": 43768000,
@@ -31,7 +31,7 @@
   },
   {
     "id_donatur": 4,
-    "visibility": "pendid_donaturikan",
+    "visibility": "sembunyikan",
     "id_donasi_program": 30,
     "kode_donasi": "91919102",
     "total_donasi": 43768000,
@@ -41,7 +41,7 @@
   },
   {
     "id_donatur": 5,
-    "visibility": "kesehatan",
+    "visibility": "sembunyikan",
     "id_donasi_program": 30,
     "kode_donasi": "91919102",
     "total_donasi": 43768000,

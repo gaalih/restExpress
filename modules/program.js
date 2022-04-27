@@ -15,8 +15,8 @@ router.get('/', (req, res) => {
 
 // all categories
 router.get('/categories', (req, res) => {
-  var results = []
-  for (var i = 0; i < data_program.length; i++) {
+  let results = []
+  for (let i = 0; i < data_program.length; i++) {
     results.push(data_program[i]['kategori'])
   }
   results = [...new Set(results)]
@@ -26,8 +26,8 @@ router.get('/categories', (req, res) => {
 // search from specific category
 router.get('/category/:category_name', (req, res) => {
   const { category_name } = req.params
-  var results = []
-  for (var i = 0; i < data_program.length; i++) {
+  let results = []
+  for (let i = 0; i < data_program.length; i++) {
     if (data_program[i]['kategori'] == category_name) {
       results.push(data_program[i])
     }
@@ -43,7 +43,7 @@ router.get('/category/:category_name', (req, res) => {
 
 // specific data from id
 router.get('/:id_program', (req, res) => {
-  let program_dipilih = data_program.find(
+  const program_dipilih = data_program.find(
     (x) => x.id === parseInt(req.params.id_program),
   )
   // jika data tidak ditemukan
@@ -56,9 +56,9 @@ router.get('/:id_program', (req, res) => {
 // search some data from judul
 router.get('/search/judul=:cari_nama_program', (req, res) => {
   const { cari_nama_program } = req.params
-  var results = []
-  for (var i = 0; i < data_program.length; i++) {
-    var judul = data_program[i]['judul']
+  let results = []
+  for (let i = 0; i < data_program.length; i++) {
+    let judul = data_program[i]['judul']
     if (judul.includes(`${cari_nama_program}`)) {
       results.push(data_program[i])
     }

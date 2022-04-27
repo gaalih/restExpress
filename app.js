@@ -2,6 +2,10 @@ const express = require('express')
 const app = express()
 const port = 8080
 
+// using middleware
+// parsing data to json
+app.use(express.json())
+
 // Routes Modules
 const program = require('./modules/program')
 const berita = require('./modules/berita')
@@ -14,10 +18,6 @@ app.use('/berita', berita)
 app.use('/donatur', donatur)
 app.use('/donasi', donasi)
 app.use('/metode_pembayaran', metode_pembayaran)
-
-// using middleware
-// parsing data to json
-app.use(express.json())
 
 //ROUTES
 app.get('/', (req, res) => {
