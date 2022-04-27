@@ -21,7 +21,7 @@ router.get('/:id_berita', (req, res) => {
 
   // jika data tidak ditemukan
   if (berita_dicari == null) {
-    res.status(418).send({ message: 'Data Tidak Ditemukan!' })
+    res.status(418).send({ message: 'Data Berita Tidak Ditemukan!' })
   }
   res.send(berita_dicari)
 })

@@ -1,0 +1,52 @@
+[
+  {
+    "id_donatur": 1,
+    "visibility": "umum",
+    "id_donasi_program": 1,
+    "kode_donasi": "91919102",
+    "total_donasi": 50397,
+    "id_metode_pembayaran": 1,
+    "tgl_donasi": "27/04/2022, 17:05",
+    "status_pembayaran": "menunggu"
+  },
+  {
+    "id_donatur": 2,
+    "visibility": "ramadhan",
+    "id_donasi_program": 1,
+    "kode_donasi": "91919102",
+    "total_donasi": 50397,
+    "id_metode_pembayaran": 1,
+    "tgl_donasi": "27/04/2022, 17:05",
+    "status_pembayaran": "menunggu"
+  },
+  {
+    "id_donatur": 3,
+    "visibility": "pembangunan",
+    "id_donasi_program": 30,
+    "kode_donasi": "91919102",
+    "total_donasi": 43768000,
+    "id_metode_pembayaran": 1,
+    "tgl_donasi": "27/04/2022, 17:05",
+    "status_pembayaran": "menunggu"
+  },
+  {
+    "id_donatur": 4,
+    "visibility": "pendid_donaturikan",
+    "id_donasi_program": 30,
+    "kode_donasi": "91919102",
+    "total_donasi": 43768000,
+    "id_metode_pembayaran": 1,
+    "tgl_donasi": "27/04/2022, 17:05",
+    "status_pembayaran": "menunggu"
+  },
+  {
+    "id_donatur": 5,
+    "visibility": "kesehatan",
+    "id_donasi_program": 30,
+    "kode_donasi": "91919102",
+    "total_donasi": 43768000,
+    "id_metode_pembayaran": 1,
+    "tgl_donasi": "27/04/2022, 17:05",
+    "status_pembayaran": "menunggu"
+  }
+]

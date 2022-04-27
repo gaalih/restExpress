@@ -21,7 +21,7 @@ router.get('/:id_program', (req, res) => {
 
   // jika data tidak ditemukan
   if (program_dicari == null) {
-    res.status(418).send({ message: 'Data Tidak Ditemukan!' })
+    res.status(418).send({ message: 'Data Program Tidak Ditemukan!' })
   }
   res.send(program_dicari)
 })

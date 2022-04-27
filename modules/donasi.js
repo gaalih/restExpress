@@ -21,7 +21,7 @@ router.get('/:id_donasi', (req, res) => {
 
   // jika data tidak ditemukan
   if (donasi_dicari == null) {
-    res.status(418).send({ message: 'Data Tidak Ditemukan!' })
+    res.status(418).send({ message: 'Data Donasi Tidak Ditemukan!' })
   }
   res.send(donasi_dicari)
 })
