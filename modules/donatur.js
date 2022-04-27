@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 // specific data
 router.get('/:id_donatur', (req, res) => {
   let donatur_dicari = data_donatur.find(
-    (x) => x.id === parseInt(req.params.id_donatur),
+    (x) => x.id_donatur === parseInt(req.params.id_donatur),
   )
 
   // jika data tidak ditemukan
@@ -24,6 +24,26 @@ router.get('/:id_donatur', (req, res) => {
     res.status(418).send({ message: 'Data Donatur Tidak Ditemukan!' })
   }
   res.send(donatur_dicari)
+})
+
+// insert donatur
+router.post('/add', (req, res) => {
+  const data_donatur = req.body
+
+  var data_disimpan = {
+    message: 'Data berhasil disimpan',
+    data: {
+      id_donatur: Date.now(),
+      nama_lengkap: data_donatur['nama_lengkap'],
+      hp_email: data_donatur['hp_email'],
+    },
+  }
+
+  // jika data tidak lengkap
+  if (!data_donatur) {
+    res.status(418).send({ message: 'Data Yang Anda Kirimkan Tidak Lengkap.' })
+  }
+  res.status(200).send(data_disimpan)
 })
 
 module.exports = router
