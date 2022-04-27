@@ -2,7 +2,7 @@
 
 #### _Framework: Express.js_
 
-merupakan rest API yang dibuat untuk memenuhi proses assenment test di Ruang Talenta.
+merupakan rest API yang dibuat untuk memenuhi proses assignment test di Ruang Talenta.
 
 ## Routes
 
