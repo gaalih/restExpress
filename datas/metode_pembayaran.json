@@ -1,0 +1,37 @@
+[
+  {
+    "id_metode_pembayaran": 1,
+    "nama_metode_pembayaran": "Bank Central Asia",
+    "nomor_rekening": "9191100"
+  },
+  {
+    "id_metode_pembayaran": 2,
+    "nama_metode_pembayaran": "Bank Mandiri Syariah",
+    "nomor_rekening": "9191100"
+  },
+  {
+    "id_metode_pembayaran": 3,
+    "nama_metode_pembayaran": "Bank BNI Syariah",
+    "nomor_rekening": "9191100"
+  },
+  {
+    "id_metode_pembayaran": 4,
+    "nama_metode_pembayaran": "Bank Mandiri",
+    "nomor_rekening": "9191100"
+  },
+  {
+    "id_metode_pembayaran": 5,
+    "nama_metode_pembayaran": "Bank Rakyat Indonesia",
+    "nomor_rekening": "9191100"
+  },
+  {
+    "id_metode_pembayaran": 6,
+    "nama_metode_pembayaran": "Gopay",
+    "nomor_rekening": "9191100"
+  },
+  {
+    "id_metode_pembayaran": 7,
+    "nama_metode_pembayaran": "OVO",
+    "nomor_rekening": "9191100"
+  }
+]

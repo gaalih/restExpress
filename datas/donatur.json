@@ -1,0 +1,27 @@
+[
+  {
+    "id_donatur": 1,
+    "nama_lengkap": "Aldi",
+    "hp_email": "081911728971"
+  },
+  {
+    "id_donatur": 2,
+    "nama_lengkap": "Bima",
+    "hp_email": "081911728914"
+  },
+  {
+    "id_donatur": 3,
+    "nama_lengkap": "Citra",
+    "hp_email": "dummy@gmail.com"
+  },
+  {
+    "id_donatur": 4,
+    "nama_lengkap": "Deni",
+    "hp_email": "dummy@gmail.com"
+  },
+  {
+    "id_donatur": 5,
+    "nama_lengkap": "Erma",
+    "hp_email": "dummy@gmail.com"
+  }
+]

@@ -5,11 +5,15 @@ const port = 8080
 // Routes Modules
 const program = require('./modules/program')
 const berita = require('./modules/berita')
+const donatur = require('./modules/donatur')
 const donasi = require('./modules/donasi')
+const metode_pembayaran = require('./modules/metode_pembayaran')
 
 app.use('/program', program)
 app.use('/berita', berita)
+app.use('/donatur', donatur)
 app.use('/donasi', donasi)
+app.use('/metode_pembayaran', metode_pembayaran)
 
 // using middleware
 // parsing data to json
@@ -17,18 +21,7 @@ app.use(express.json())
 
 //ROUTES
 app.get('/', (req, res) => {
-  res.send('Selamat datang di halaman Awal')
-})
-
-app.get('/nama/:nama', (req, res) => {
-  const { nama } = req.params
-
-  if (!nama) {
-    res.status(418).send({ message: 'data tidak dapat ditemukan' })
-  }
-  res.status(200).send({
-    nama: `nama anda ${nama}`,
-  })
+  res.send('Ini adalah Rest API untuk assesment test di ada ruang talenta')
 })
 
 //Listening to the server
