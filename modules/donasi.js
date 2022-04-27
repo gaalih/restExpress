@@ -32,7 +32,7 @@ router.post('/add/:id_program/:id_donatur', (req, res) => {
   const { id_donatur } = req.params
   const data_donasi = req.body
 
-  var data_disimpan = {
+  let data_disimpan = {
     message: 'Data berhasil disimpan',
     data: {
       id_donatur: id_program,

@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 // specific data
 router.get('/:id_metode', (req, res) => {
   let metode_dipilih = metode_pembayaran.find(
-    (x) => x.id === parseInt(req.params.id_metode),
+    (x) => x.id_metode_pembayaran === parseInt(req.params.id_metode),
   )
 
   // jika data tidak ditemukan
@@ -24,6 +24,65 @@ router.get('/:id_metode', (req, res) => {
     res.status(418).send({ message: 'Metode Pembayaran Tidak Ditemukan!' })
   }
   res.send(metode_dipilih)
+})
+
+// insert metode pembayaran
+router.post('/add', (req, res) => {
+  const data_metode = req.body
+
+  let data_disimpan = {
+    message: 'Data berhasil disimpan',
+    data: {
+      id_metode_pembayaran: Date.now(),
+      nama_metode_pembayaran: data_metode['nama_metode_pembayaran'],
+      nomor_rekening: data_metode['nomor_rekening'],
+    },
+  }
+
+  // jika data tidak lengkap
+  if (!data_metode) {
+    res.status(418).send({ message: 'Data Yang Anda Kirimkan Tidak Lengkap.' })
+  }
+  res.status(200).send(data_disimpan)
+})
+
+// update metode pembayaran
+router.put('/update/:id_metode', (req, res) => {
+  const { id_metode } = req.params
+  const data_metode = req.body
+
+  let data_disimpan = {
+    message: `Data: ${id_metode} berhasil diubah`,
+    data: {
+      nama_metode_pembayaran: data_metode['nama_metode_pembayaran'],
+      nomor_rekening: data_metode['nomor_rekening'],
+    },
+  }
+
+  // jika data tidak lengkap
+  if (!data_metode) {
+    res.status(418).send({ message: 'Data Yang Anda Kirimkan Tidak Lengkap.' })
+  }
+  res.status(200).send(data_disimpan)
+})
+
+router.delete('/delete/:id_metode', (req, res) => {
+  const { id_metode } = req.params
+  const data_metode = req.body
+
+  let data_dihapus = {
+    message: `Data: ${id_metode} berhasil dihapus`,
+    data: {
+      nama_metode_pembayaran: data_metode['nama_metode_pembayaran'],
+      nomor_rekening: data_metode['nomor_rekening'],
+    },
+  }
+
+  // jika data tidak lengkap
+  if (!data_metode) {
+    res.status(418).send({ message: 'Data Yang Anda Kirimkan Tidak Lengkap.' })
+  }
+  res.status(200).send(data_dihapus)
 })
 
 module.exports = router
