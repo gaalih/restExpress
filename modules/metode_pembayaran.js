@@ -68,21 +68,12 @@ router.put('/update/:id_metode', (req, res) => {
 
 router.delete('/delete/:id_metode', (req, res) => {
   const { id_metode } = req.params
-  const data_metode = req.body
-
-  let data_dihapus = {
-    message: `Data: ${id_metode} berhasil dihapus`,
-    data: {
-      nama_metode_pembayaran: data_metode['nama_metode_pembayaran'],
-      nomor_rekening: data_metode['nomor_rekening'],
-    },
-  }
 
   // jika data tidak lengkap
-  if (!data_metode) {
-    res.status(418).send({ message: 'Data Yang Anda Kirimkan Tidak Lengkap.' })
+  if (!id_metode) {
+    res.status(418).send({ message: 'Data Yang Anda Cari Tidak Tersidia.' })
   }
-  res.status(200).send(data_dihapus)
+  res.status(200).send({ message: `Data: ${id_metode} berhasil dihapus` })
 })
 
 module.exports = router
