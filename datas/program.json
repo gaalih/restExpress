@@ -48,5 +48,15 @@
     "image_1": "http://google.com",
     "image_2": "http://google.com",
     "image_3": "http://google.com"
+  },
+  {
+    "id": 6,
+    "judul": "tenda kesehatan untuk warga pedalaman NTT 2",
+    "kategori": "kesehatan",
+    "total_waktu": 30,
+    "total_donasi": 43768000,
+    "image_1": "http://google.com",
+    "image_2": "http://google.com",
+    "image_3": "http://google.com"
   }
 ]

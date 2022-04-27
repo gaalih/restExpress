@@ -1,0 +1,32 @@
+[
+  {
+    "id_berita": 1,
+    "judul": "loremini adalah judul berita",
+    "deskripsi": "ini merupakan deskripsi lengkap mengenai berita",
+    "tgl_berita": "27/04/2022, 17:05"
+  },
+  {
+    "id_berita": 2,
+    "judul": "loremini adalah judul berita",
+    "deskripsi": "ini merupakan deskripsi lengkap mengenai berita",
+    "tgl_berita": "27/04/2022, 17:05"
+  },
+  {
+    "id_berita": 3,
+    "judul": "loremini adalah judul berita",
+    "deskripsi": "ini merupakan deskripsi lengkap mengenai berita",
+    "tgl_berita": "27/04/2022, 17:05"
+  },
+  {
+    "id_berita": 4,
+    "judul": "loremini adalah judul berita",
+    "deskripsi": "ini merupakan deskripsi lengkap mengenai berita",
+    "tgl_berita": "27/04/2022, 17:05"
+  },
+  {
+    "id_berita": 5,
+    "judul": "loremini adalah judul berita",
+    "deskripsi": "ini merupakan deskripsi lengkap mengenai berita",
+    "tgl_berita": "27/04/2022, 17:05"
+  }
+]
